@@ -26,7 +26,7 @@ use Symfony\Component\Process\Process;
 /**
  * @method MaintenanceConfig getConfig()
  */
-class MaintenanceDependencyContainer extends AbstractBusinessFactory
+class MaintenanceBusinessFactory extends AbstractBusinessFactory
 {
 
     /**

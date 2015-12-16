@@ -12,6 +12,6 @@ use Spryker\Zed\Maintenance\MaintenanceConfig;
 /**
  * @method MaintenanceConfig getConfig()
  */
-class MaintenanceDependencyContainer extends AbstractCommunicationFactory
+class MaintenanceCommunicationFactory extends AbstractCommunicationFactory
 {
 }
