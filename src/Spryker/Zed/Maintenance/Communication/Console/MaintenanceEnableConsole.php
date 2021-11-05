@@ -48,8 +48,8 @@ class MaintenanceEnableConsole extends AbstractMaintenanceConsole
     {
         $application = $this->getApplicationName($input);
 
-        $this->disableYvesMaintenancePage($application);
-        $this->disableZedMaintenancePage($application);
+        $this->enableYvesMaintenancePage($application);
+        $this->enableZedMaintenancePage($application);
 
         return static::CODE_SUCCESS;
     }
@@ -59,7 +59,7 @@ class MaintenanceEnableConsole extends AbstractMaintenanceConsole
      *
      * @return void
      */
-    protected function disableYvesMaintenancePage($application)
+    protected function enableYvesMaintenancePage($application)
     {
         if ($application === static::APPLICATION_ALL || $application === static::APPLICATION_YVES) {
             $this->getFacade()->enableMaintenanceForYves();
@@ -71,7 +71,7 @@ class MaintenanceEnableConsole extends AbstractMaintenanceConsole
      *
      * @return void
      */
-    protected function disableZedMaintenancePage($application)
+    protected function enableZedMaintenancePage($application)
     {
         if ($application === static::APPLICATION_ALL || $application === static::APPLICATION_ZED) {
             $this->getFacade()->enableMaintenanceForZed();
