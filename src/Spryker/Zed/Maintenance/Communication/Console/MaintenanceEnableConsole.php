@@ -27,9 +27,6 @@ class MaintenanceEnableConsole extends AbstractMaintenanceConsole
      */
     public const COMMAND_DESCRIPTION = 'Will enable the maintenance mode while setup/deploy.';
 
-    /**
-     * @return void
-     */
     protected function configure(): void
     {
         parent::configure();
