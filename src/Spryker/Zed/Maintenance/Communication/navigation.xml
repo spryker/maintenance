@@ -15,15 +15,6 @@
                 <controller>index</controller>
                 <action>index</action>
             </index>
-
-            <phpinfo>
-                <label>PHP Info</label>
-                <title>PHP Info</title>
-                <bundle>maintenance</bundle>
-                <controller>php-info</controller>
-                <action>index</action>
-                <icon>fa-heartbeat</icon>
-            </phpinfo>
         </pages>
     </maintenance>
 </config>
